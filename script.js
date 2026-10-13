@@ -143,7 +143,7 @@
         });
     });
 
-    /* Certificate lightbox — every [data-full] trigger, in page order */
+    /* Certificate lightbox: every [data-full] trigger, in page order */
     const triggers = $$('[data-full]');
     const lb = $('.lightbox');
     const lbImg = $('img', lb);
