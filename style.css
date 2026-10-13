@@ -600,14 +600,11 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 .ourlist-visual {
     background: radial-gradient(circle at 20% 15%, rgba(255, 196, 120, .55), transparent 50%), radial-gradient(circle at 85% 90%, rgba(255, 70, 110, .45), transparent 55%), linear-gradient(150deg, #2a1418, #160f14);
 }
-.ol-browser { position: absolute; top: 13%; left: 6%; width: 72%; transition: transform .8s var(--ease); }
-.ol-browser img { width: 100%; display: block; }
-.ol-phone { width: 23%; top: auto; left: auto; bottom: 7%; transform: none; }
-.ol-p1 { right: 19%; bottom: 5%; transform: rotate(-4deg); z-index: 2; }
-.ol-p2 { right: 4%; bottom: 12%; transform: rotate(5deg); z-index: 1; }
-.project:hover .ol-p1 { transform: rotate(-6deg) translateY(-8px); }
-.project:hover .ol-p2 { transform: rotate(8deg) translate(6px, -4px); }
-.project:hover .ol-browser { transform: translateY(-4px); }
+.ol-browser { position: absolute; top: 50%; left: 6%; width: 76%; transform: translateY(-46%); transition: transform .8s var(--ease); }
+.ol-browser img { width: 100%; height: auto; display: block; }
+.ol-phone { width: 21%; top: auto; left: auto; right: 6%; bottom: 9%; transform: rotate(4deg); z-index: 2; }
+.project:hover .ol-phone { transform: rotate(6deg) translateY(-8px); }
+.project:hover .ol-browser { transform: translateY(-49%); }
 .ourlist-visual .status-chip { background: rgba(12, 11, 15, .6); backdrop-filter: blur(6px); }
 .ourlist-visual .pulse { background: #6ee7a8; }
 
@@ -806,7 +803,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
     .m-wide img { width: 100%; min-height: 0; aspect-ratio: 16 / 10; }
     .xp-org { flex-direction: column; align-items: flex-start; }
     .dv-cam { width: 54%; }
-    .ol-phone { width: 30%; }
+    .ol-phone { width: 26%; right: 4%; bottom: 7%; }
     .lens-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 230px; gap: 10px; }
     .shot { border-radius: 14px; }
     .shot-type { opacity: 1; transform: none; }
