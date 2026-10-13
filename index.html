@@ -1,209 +1,597 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
-    <meta name="description" content="Nadha Shirin K N's portfolio website showcasing projects, skills, and certifications in computer science and cybersecurity.">
-    <meta name="keywords" content="Nadha Shirin, portfolio, computer science, cybersecurity, web development">
-    <meta name="author" content="Nadha Shirin K N">
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nadha Shirin K N</title>
+    <title>Nadha Shirin K N — Software Developer at IBM</title>
+    <meta name="description" content="Nadha Shirin K N — Software Developer at IBM India Software Labs, Kochi. B.Tech CSE with Honours in AI & ML from RSET. Projects, experience and certifications.">
+    <meta name="author" content="Nadha Shirin K N">
+    <meta name="theme-color" content="#0c0b0f">
+    <meta property="og:title" content="Nadha Shirin K N — Software Developer at IBM">
+    <meta property="og:description" content="Software Developer at IBM India Software Labs. Building with DevOps, AI and a love for human-centred design.">
+    <meta property="og:image" content="https://nadhashirinkn.xyz/assets/img/headshot.webp">
+    <meta property="og:url" content="https://nadhashirinkn.xyz/">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header class="header-bg">
-        <nav>
-            <img src="nspic2.png" alt="Nadha's Logo" class="logo">
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
+    <div class="progress" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <header class="nav-wrap">
+        <nav class="nav" aria-label="Primary">
+            <a href="#home" class="nav-logo" aria-label="Back to top">
+                <img src="assets/img/logo.png" alt="" width="345" height="388">
+            </a>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#lens">Photography</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="Resume.pdf" target="_blank">Resume</a></li>
             </ul>
+            <a href="#contact" class="btn btn-small">Say hello <span aria-hidden="true">→</span></a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span>
+            </button>
         </nav>
-        <section id="home" class="header-content">
-            <h1></h1>
-            <h2 class="name">Nadha Shirin K N</h2>
-        </section>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#highlights">Highlights</a>
+            <a href="#lens">Photography</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
     </header>
+
     <main>
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                <!-- Project 1 -->
-                <div class="project-card project1">
-                    <div class="project-image1-container">
-                        <img src="skin.gif" alt="SKIN GIF" class="project-image1" loading="lazy">
-                    </div>
-                    <div class="project-details">
-                        <h3>SKKN</h3>
-                        <p>The Skin Care Recommendation System (SCRS) is an app designed to revolutionize skincare practices by providing personalized solutions tailored to individual needs. It encompasses skin type analysis, personalized skincare routines, and a user-friendly interface for managing skincare regimens and product inventory.</p>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card project2">
-                    <div class="project-image2-container">
-                        <img src="download.gif" alt="Metro Management System GIF" class="project-image2">
-                    </div>
-                    <div class="project-details">
-                        <h3>Metro Management System</h3>
-                        <p>The Metro Management System project involves a comprehensive software solution designed to streamline and enhance the operations of urban metro systems. This system covers everything from passenger management and ticketing to real-time tracking and maintenance scheduling.</p>
-                    </div>
-                </div>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="aurora" aria-hidden="true">
+                <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
             </div>
-        </section>
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-image-container">
-                    <img src="nspic.png" alt="Nadha's Profile" class="nashpic2">
-                </div>
-                <div class="about-text">
-                    <p>
-                        A passionate undergraduate pursuing B.Tech in Computer Science and Engineering, with a fervent interest in Cybersecurity and Web Development. Constantly expanding my knowledge in these critical fields, I am currently seeking roles where I can utilize my experience and skills. I am actively pursuing certifications and courses to deepen my understanding of Cybersecurity principles, practices, and modern web technologies. Engaged in various projects, I am eager to bring my passion and skills to a dynamic team, contributing to the protection and integrity of digital assets, as well as building innovative and secure web applications.
+            <div class="hero-grid" aria-hidden="true"></div>
+
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow reveal"><span class="pulse"></span> Software Developer · IBM India Software Labs</p>
+                    <h1 class="hero-title">
+                        <span class="line"><span class="word">Nadha</span></span>
+                        <span class="line"><span class="word italic grad-text">Shirin K N</span></span>
+                    </h1>
+                    <p class="hero-sub reveal">
+                        Software developer in Kochi, building
+                        <span class="rotator" aria-live="polite"><span class="rotator-word">CI/CD pipelines</span></span><br>
+                        with a love for automation, AI and human-centred design.
                     </p>
+                    <div class="hero-cta reveal">
+                        <a href="#work" class="btn btn-primary magnetic">See my work</a>
+                        <a href="https://www.linkedin.com/in/nadhashirin-kn/" target="_blank" rel="noopener" class="btn btn-ghost magnetic">LinkedIn <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="portrait">
+                        <img src="assets/img/headshot.webp" alt="Nadha Shirin K N wearing an IBM t-shirt and an “I'm an AI expert” badge" width="800" height="800">
+                    </div>
+                    <div class="badge" aria-hidden="true">
+                        <svg viewBox="0 0 120 120">
+                            <defs><path id="circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+                            <text><textPath href="#circle">SOFTWARE · DEVOPS · AI · DESIGN · KOCHI ·</textPath></text>
+                        </svg>
+                        <span class="badge-core">✦</span>
+                    </div>
+                    <div class="float-card fc-1">
+                        <span class="fc-label">Now at</span>
+                        <strong>IBM ISL</strong>
+                    </div>
+                    <div class="float-card fc-2">
+                        <span class="fc-label">B.Tech Honours</span>
+                        <strong>AI &amp; ML</strong>
+                    </div>
                 </div>
             </div>
+
+            <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+                <span>Scroll</span><i></i>
+            </a>
         </section>
-        
-        <div class="skills-container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <div class="circle" data-percentage="75">
-                        <div class="inner-circle"></div>
-                        <div class="skill-label">Python</div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="30">
-                        <div class="inner-circle"></div>
-                        <div class="skill-label">Java</div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="60">
-                        <div class="inner-circle"></div>
-                        <div class="skill-label">C</div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="40">
-                        <div class="inner-circle"></div>
-                        <div class="skill-label">HTML & CSS</div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="30">
-                        <div class="inner-circle"></div>
-                        <div class="skill-label">Git</div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="circle" data-percentage="40">
-                        <div class="inner-circle"></div>
-                        <div class="skill-label">Flutter</div>
-                    </div>
-                </div>
+
+        <!-- Marquee -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>CI/CD</span><em>✦</em><span>Jenkins</span><em>✦</em><span>Python</span><em>✦</em><span>watsonx</span><em>✦</em><span>Computer Vision</span><em>✦</em><span>Flask</span><em>✦</em><span>React</span><em>✦</em><span>Flutter</span><em>✦</em><span>Machine Learning</span><em>✦</em><span>Cybersecurity</span><em>✦</em>
+                <span>CI/CD</span><em>✦</em><span>Jenkins</span><em>✦</em><span>Python</span><em>✦</em><span>watsonx</span><em>✦</em><span>Computer Vision</span><em>✦</em><span>Flask</span><em>✦</em><span>React</span><em>✦</em><span>Flutter</span><em>✦</em><span>Machine Learning</span><em>✦</em><span>Cybersecurity</span><em>✦</em>
             </div>
         </div>
-        
 
-        <section id="certifications" class="container">
-            <h2>Certifications</h2>
-            <div class="certification-list">
-                <div class="certification" id="cert6">
-                    <img src="cybercert.png" alt="Certification 6 Image">
-                </div>
-                <div class="certification" id="cert0">
-                    <img src="cert0.png" alt="Certification 0 Image">
-                </div>
-                <div class="certification" id="cert00">
-                    <img src="cert00.png" alt="Certification 00 Image">
-                </div>
-                <div class="certification" id="cert1">
-                    <img src="cert1.png" alt="Certification 1 Image">
-                </div>
-                <div class="certification" id="cert2">
-                    <img src="cert2.png" alt="Certification 2 Image">
-                </div>
-                <div class="certification" id="cert3">
-                    <img src="cert3.png" alt="Certification 3 Image">
-                </div>
-                <div class="certification" id="cert4">
-                    <img src="cert4.png" alt="Certification 4 Image">
-                </div>
-                <div class="certification" id="cert5">
-                    <img src="cert5.png" alt="Certification 5 Image">
-                </div>
-                <div class="certification" id="cert6">
-                    <img src="cert6.png" alt="Certification 6 Image">
-                </div>
-                <div class="certification" id="cert6">
-                    <img src="cert7.png" alt="Certification 6 Image">
-                </div>
-                <div class="certification" id="cert6">
-                    <img src="cert8.png" alt="Certification 6 Image">
+        <!-- About -->
+        <section id="about" class="section container">
+            <div class="section-head reveal">
+                <span class="kicker">01 — About</span>
+                <h2>Engineering with <em>curiosity</em>,<br>building with <em>empathy</em>.</h2>
+            </div>
+
+            <div class="about">
+                <figure class="about-photo reveal">
+                    <img src="assets/img/graduation.webp" alt="Nadha receiving her B.Tech Honours degree at RSET" loading="lazy" width="480" height="320">
+                    <figcaption>Graduation day — B.Tech CSE, Honours in AI &amp; ML.</figcaption>
+                </figure>
+                <div class="about-body">
+                    <p class="lead reveal">
+                        I'm a <strong>Software Developer at IBM India Software Labs</strong> in Kochi. I joined as an intern
+                        on the Business Automation Workflow CI/CD team and stayed on full-time.
+                    </p>
+                    <p class="reveal">
+                        I graduated from Rajagiri School of Engineering &amp; Technology in 2025 with a B.Tech in Computer Science
+                        and Honours in Artificial Intelligence &amp; Machine Learning. My work sits where automation, AI and
+                        good design meet — from streamlining software delivery with DevOps practices to building tools,
+                        like DaVinci Minds, that make learning more inclusive.
+                    </p>
+                    <p class="reveal">
+                        Outside the codebase you'll find me at hackathons, volunteering at events like the IBMer watsonx
+                        Challenge, and picking up new certifications along the way.
+                    </p>
+                    <div class="stats">
+                        <div class="stat reveal"><span class="num" data-count="15" data-suffix="+">0</span><span class="stat-label">Certifications &amp; badges</span></div>
+                        <div class="stat reveal"><span class="num" data-count="4" data-suffix="+">0</span><span class="stat-label">Hackathons</span></div>
+                        <div class="stat reveal"><span class="num" data-count="1400" data-suffix="+">0</span><span class="stat-label">LinkedIn followers</span></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="container">
-            <h1 class="subtitle">Get In Touch</h1>
-            <div class="contact-container">
-                <div class="contact-info-container">
-                    <p>Feel free to reach out if you have any questions or projects in mind. I'm always looking for new opportunities to learn and collaborate.</p>
-                    <div class="contact-info">
-                        <a href="https://in.linkedin.com/in/nadha-shirin-k-n-19301223b"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://www.instagram.com/nxdhaaaa.a/"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                        <a href="https://github.com/nxdha"style="--i:9" target="_blank"><i class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-                <div class="contact-form-container">
-                        <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
-                            <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message:</label>
-                                <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
-                            </div>
-                            <button type="submit">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-    </main>
-    <footer>
-        <footer class="footer-bg" class="container">
-            <div class="footer-content">
-                <img src="nspic2.png" alt="Nadha's Logo" class="footer-logo">
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="social-icons">
-                    <a href="https://github.com/nxdha" target="_blank"><img src="g-icon.png" alt="GitHub"></a>
-                    <a href="https://in.linkedin.com/in/nadha-shirin-k-n-19301223b" target="_blank"><img src="l-icon.png" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com/nxdhaaaa.a/" target="_blank"><img src="i-icon.png" alt="Instagram"></a>
-                </div>
-                <p>&copy; 2024 Nadha Shirin K N. All Rights Reserved.</p>
-            </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
 
+        <!-- Experience -->
+        <section id="experience" class="section container">
+            <div class="section-head reveal">
+                <span class="kicker">02 — Experience</span>
+                <h2>Where I've <em>grown</em>.</h2>
+            </div>
+
+            <div class="xp">
+                <article class="xp-main reveal spotlight">
+                    <div class="xp-org">
+                        <span class="xp-logo" aria-hidden="true">IBM</span>
+                        <div>
+                            <h3>IBM India Software Labs</h3>
+                            <p>Kochi, Kerala · Jan 2025 — Present</p>
+                        </div>
+                    </div>
+                    <ol class="xp-roles">
+                        <li>
+                            <span class="tl-date">Aug 2025 — Present · Full-time</span>
+                            <h4>Software Developer</h4>
+                            <p>Converted to a full-time role after my internship. Building enterprise software at ISL, and
+                                volunteered as an AI Expert at the AI Bar during the IBMer watsonx Challenge 2026 kickoff —
+                                helping colleagues get started with IBM Bob.</p>
+                        </li>
+                        <li>
+                            <span class="tl-date">Jan — Jul 2025 · Internship</span>
+                            <h4>Software Developer Intern</h4>
+                            <p>Business Automation Workflow CI/CD team. Contributed to automating CI/CD pipelines and gained
+                                hands-on experience with DevOps practices in real-world software development. Took part in the
+                                ThinkNite Hackathon and earned the IBM Internship Program Certificate.</p>
+                        </li>
+                    </ol>
+                    <ul class="tags"><li>CI/CD</li><li>Jenkins</li><li>DevOps</li><li>Business Automation Workflow</li><li>watsonx</li></ul>
+                </article>
+
+                <div class="xp-side">
+                    <h3 class="xp-side-title reveal">Leadership at RSET</h3>
+                    <ol class="timeline">
+                        <li class="reveal">
+                            <span class="tl-date">2023 — 2025</span>
+                            <h4>Placement Representative</h4>
+                            <p>Rajagiri School of Engineering &amp; Technology</p>
+                        </li>
+                        <li class="reveal">
+                            <span class="tl-date">2023 — 2025</span>
+                            <h4>Student Representative</h4>
+                            <p>Computer Society of India, RSET Student Branch</p>
+                        </li>
+                        <li class="reveal">
+                            <span class="tl-date">2022 — 2024</span>
+                            <h4>Rudhirasena Coordinator</h4>
+                            <p>NSS RSET — blood donation drives</p>
+                        </li>
+                        <li class="reveal">
+                            <span class="tl-date">2021 — 2025</span>
+                            <h4>Member</h4>
+                            <p>IEEE · RSET IEDC</p>
+                        </li>
+                    </ol>
+                    <div class="edu reveal">
+                        <span class="kicker">Education</span>
+                        <h4>B.Tech, Computer Science &amp; Engineering</h4>
+                        <p>Honours in Artificial Intelligence &amp; Machine Learning<br>Rajagiri School of Engineering &amp; Technology · 2021 — 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="section container">
+            <div class="section-head reveal">
+                <span class="kicker">03 — Selected work</span>
+                <h2>Things I've <em>designed</em> &amp; <em>built</em>.</h2>
+            </div>
+
+            <!-- OurList -->
+            <article class="project reveal">
+                <div class="project-visual ourlist-visual tilt">
+                    <div class="browser ol-browser">
+                        <div class="browser-bar"><i></i><i></i><i></i><span>ourlist.love</span></div>
+                        <img src="assets/img/ourlist-desktop.webp" alt="OurList landing page — Dream together. Do it together." loading="lazy" width="1200" height="692">
+                    </div>
+                    <div class="phone ol-phone ol-p1"><img src="assets/img/ourlist-m1.webp" alt="OurList on mobile" loading="lazy"></div>
+                    <div class="phone ol-phone ol-p2"><img src="assets/img/ourlist-m2.webp" alt="OurList features on mobile — private, real-time sync, multiple lists" loading="lazy"></div>
+                    <span class="status-chip"><span class="pulse"></span> Live</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span class="pnum">01</span><span>Product</span><span>Web app · PWA</span></div>
+                    <h3>OurList <span class="muted-serif">— dream together, do it together</span></h3>
+                    <p>
+                        A private, shared bucket-list app for couples. Invite your partner with a single link, build themed lists of
+                        trips, dates and dreams, and check them off side by side — with real-time sync, notes, emoji reactions,
+                        comments and gentle notifications. Free, private by design and installable on any device.
+                    </p>
+                    <ul class="tags"><li>Real-time sync</li><li>PWA</li><li>Notifications</li><li>Privacy-first</li><li>Product design</li></ul>
+                    <a href="https://www.ourlist.love/" target="_blank" rel="noopener" class="link-arrow">Visit ourlist.love <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <!-- DaVinci Minds -->
+            <article class="project project-flip reveal">
+                <div class="project-visual davinci-visual tilt">
+                    <div class="browser dv-browser">
+                        <div class="browser-bar"><i></i><i></i><i></i><span>davinci-minds</span></div>
+                        <img src="assets/img/davinci-ui.webp" alt="DaVinci Minds lesson view with attention timer" loading="lazy">
+                    </div>
+                    <div class="dv-cam">
+                        <img src="assets/img/attention.webp" alt="Attention tracking module mapping facial landmarks in real time" loading="lazy">
+                        <span class="status-chip"><span class="pulse"></span> Attention maintained</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span class="pnum">02</span><span>2024 — 2025</span><span>Final-year project</span></div>
+                    <h3>DaVinci Minds <span class="muted-serif">— learning for ADHD minds</span></h3>
+                    <p>
+                        An AI-powered learning platform for students with ADHD. It transcribes YouTube lectures, uses Gemini AI to
+                        generate mind maps, notes and MCQs, and tracks attention in real time with eye-tracking and computer vision —
+                        nudging students back with focus games and gentle audio cues. A parent portal shows progress and focus trends.
+                    </p>
+                    <ul class="tags"><li>Gemini AI</li><li>OpenAI</li><li>Flask</li><li>Computer vision</li><li>Eye-tracking</li></ul>
+                    <a href="https://www.linkedin.com/in/nadhashirin-kn/details/projects/" target="_blank" rel="noopener" class="link-arrow">Read more on LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <!-- SKKN -->
+            <article class="project reveal">
+                <div class="project-visual skkn-visual tilt">
+                    <div class="phone p-left"><img src="assets/img/skkn-b.webp" alt="SKKN skin type quiz screen" loading="lazy"></div>
+                    <div class="phone p-center"><img src="assets/img/skkn-a.webp" alt="SKKN splash screen — Radiance Redefined" loading="lazy"></div>
+                    <div class="phone p-right"><img src="assets/img/skkn-f.webp" alt="SKKN product inventory screen" loading="lazy"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span class="pnum">03</span><span>Feb — May 2024</span><span>Android app</span></div>
+                    <h3>SKKN <span class="muted-serif">— Radiance Redefined</span></h3>
+                    <p>
+                        A skincare recommendation app that uses machine learning to build personalised routines for concerns like
+                        acne, ageing, sensitivity and hyperpigmentation. Track progress, set reminders, explore alternatives and buy
+                        recommended products with full ingredient insights.
+                    </p>
+                    <ul class="tags"><li>Flutter</li><li>Firebase</li><li>Cloud Firestore</li><li>Python</li><li>ML</li></ul>
+                    <a href="https://github.com/nxdha/SKKN-a-skincare-recommendation-system" target="_blank" rel="noopener" class="link-arrow">View on GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <!-- Metro -->
+            <article class="project project-flip reveal">
+                <div class="project-visual metro-visual tilt">
+                    <div class="browser">
+                        <div class="browser-bar"><i></i><i></i><i></i><span>kochi-metro.app</span></div>
+                        <div class="slideshow" data-interval="3200">
+                            <img src="assets/img/metro-a.webp" alt="Kochi Metro homepage — We've got your journey covered" class="active" loading="lazy">
+                            <img src="assets/img/metro-b.webp" alt="Metro Management System sign-up screen" loading="lazy">
+                            <img src="assets/img/metro-c.webp" alt="Metro dashboard with view, book tickets and timings" loading="lazy">
+                            <img src="assets/img/metro-d.webp" alt="Ticket booking screen" loading="lazy">
+                            <img src="assets/img/metro-e.webp" alt="Metro Management System screen" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span class="pnum">04</span><span>Sep — Dec 2023</span><span>Web app</span></div>
+                    <h3>Kochi Metro <span class="muted-serif">— Management System</span></h3>
+                    <p>
+                        A paperless ticketing platform for metro commuters: secure sign-up, route maps, ticket booking and cancellation
+                        with accurate fare calculation, online payments and profile management — all backed by a robust database design.
+                    </p>
+                    <ul class="tags"><li>React</li><li>Express</li><li>MongoDB</li><li>Payments</li><li>Auth</li></ul>
+                    <a href="https://github.com/nxdha/Metro-Management-System" target="_blank" rel="noopener" class="link-arrow">View on GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Highlights -->
+        <section id="highlights" class="section container">
+            <div class="section-head reveal">
+                <span class="kicker">04 — Highlights</span>
+                <h2>Moments worth <em>sharing</em>.</h2>
+            </div>
+
+            <div class="moments">
+                <a class="moment m-wide reveal" href="https://www.linkedin.com/in/nadhashirin-kn/recent-activity/all/" target="_blank" rel="noopener">
+                    <img src="assets/img/watsonx26-volunteer.webp" alt="Nadha helping IBMers at the AI Bar" loading="lazy">
+                    <div class="moment-body">
+                        <span class="moment-tag">2026 · IBM Kochi</span>
+                        <h3>AI Expert at the watsonx Challenge</h3>
+                        <p>Volunteered at the AI Bar during the IBMer watsonx Challenge 2026 kickoff — answering questions about IBM Bob and showing how it makes everyday work simpler.</p>
+                    </div>
+                </a>
+                <a class="moment reveal" href="https://www.linkedin.com/in/nadhashirin-kn/recent-activity/all/" target="_blank" rel="noopener">
+                    <img src="assets/img/ibm-neon.webp" alt="IBM eye-bee-M neon sign" loading="lazy">
+                    <div class="moment-body">
+                        <span class="moment-tag">2025 · New role</span>
+                        <h3>Officially joined IBM ISL</h3>
+                        <p>After a 6-month internship, I continued my journey with IBM as a full-time Software Developer.</p>
+                    </div>
+                </a>
+                <a class="moment reveal" href="https://www.linkedin.com/in/nadhashirin-kn/recent-activity/all/" target="_blank" rel="noopener">
+                    <img src="assets/img/attention.webp" alt="Attention tracking module running on a laptop" loading="lazy">
+                    <div class="moment-body">
+                        <span class="moment-tag">Featured · EdTech</span>
+                        <h3>Attention Tracking Module</h3>
+                        <p>Tracks eye movement, posture and facial expressions in real time to help educators and parents keep students engaged.</p>
+                    </div>
+                </a>
+                <a class="moment reveal" href="https://www.linkedin.com/in/nadhashirin-kn/recent-activity/all/" target="_blank" rel="noopener">
+                    <img src="assets/img/graduation.webp" alt="Nadha receiving her degree on graduation day" loading="lazy">
+                    <div class="moment-body">
+                        <span class="moment-tag">2025 · RSET</span>
+                        <h3>Officially an engineer</h3>
+                        <p>Graduated with a B.Tech in CSE and Honours in AI &amp; ML from Rajagiri.</p>
+                    </div>
+                </a>
+                <a class="moment reveal" href="https://www.linkedin.com/in/nadhashirin-kn/recent-activity/all/" target="_blank" rel="noopener">
+                    <img src="assets/img/intern-team.webp" alt="Nadha with her managers at IBM" loading="lazy">
+                    <div class="moment-body">
+                        <span class="moment-tag">2025 · Internship</span>
+                        <h3>Six months on the BAW CI/CD team</h3>
+                        <p>Automating pipelines, the ThinkNite Hackathon and “I Love It Here” — it wasn't just about code.</p>
+                    </div>
+                </a>
+            </div>
+            <a href="https://www.linkedin.com/in/nadhashirin-kn/recent-activity/all/" target="_blank" rel="noopener" class="link-arrow more-link reveal">See all posts on LinkedIn <span aria-hidden="true">↗</span></a>
+        </section>
+
+        <!-- Lens -->
+        <section id="lens" class="section container">
+            <div class="lens-head">
+                <div class="section-head reveal">
+                    <span class="kicker">05 — Through my lens</span>
+                    <h2>Stories, <em>frame by frame</em>.</h2>
+                </div>
+                <div class="lens-intro reveal">
+                    <p>Off the clock, I shoot and edit as <strong>Stories by Nadha</strong> — skies, seas, slow coffee mornings and the quiet little moments in between.</p>
+                    <a href="https://www.instagram.com/storiesbynadha/" target="_blank" rel="noopener" class="link-arrow">Follow @storiesbynadha <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+
+            <div class="lens-grid">
+                <a class="shot reveal" href="https://www.instagram.com/p/DWHIHUujPLxBTaXqp4au62jkZRqPKt_XULVp4o0/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-sea.webp" alt="Silhouette by the sea at sunset" loading="lazy" width="1440" height="1920"><span class="shot-type">By the sea</span>
+                </a>
+                <a class="shot reveal" href="https://www.instagram.com/p/DJY4suohupU/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-coffee.webp" alt="Coffee beside a laptop at the office" loading="lazy" width="1440" height="1799"><span class="shot-type">Coffee &amp; code</span>
+                </a>
+                <a class="shot shot-wide reveal" href="https://www.instagram.com/reel/DeUu8y5h1_q/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-birds.webp" alt="Birds on a branch — “one of my love languages is taking pictures”" loading="lazy" width="720" height="375"><span class="shot-type">Love languages</span>
+                </a>
+                <a class="shot shot-wide reveal" href="https://www.instagram.com/p/DSKFyp4gQhT/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-eye.webp" alt="Close-up of an eye in warm light" loading="lazy" width="837" height="471"><span class="shot-type">Raw, random, lately</span>
+                </a>
+                <a class="shot reveal" href="https://www.instagram.com/reel/DMheWKvMrT_/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-lantern.webp" alt="Hands releasing a glowing sky lantern at night" loading="lazy" width="720" height="1280"><span class="shot-type">Lantern night</span>
+                </a>
+                <a class="shot reveal" href="https://www.instagram.com/p/DIRbNdaBLIE/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-flowers.webp" alt="Friends reaching for flowers in a garden" loading="lazy" width="960" height="1200"><span class="shot-type">Picking flowers</span>
+                </a>
+                <a class="shot reveal" href="https://www.instagram.com/p/DHBNwcvoQYs/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-goa.webp" alt="Black-and-white portrait among old pillars in Goa" loading="lazy" width="1440" height="1800"><span class="shot-type">Goa</span>
+                </a>
+                <a class="shot reveal" href="https://www.instagram.com/reel/DVynrekgT2w/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-window.webp" alt="Silhouettes by a window — sometimes you just need to pause and breathe" loading="lazy" width="720" height="1280"><span class="shot-type">Pause &amp; breathe</span>
+                </a>
+                <a class="shot shot-wide reveal" href="https://www.instagram.com/reel/DeBlmNLMHb3/" target="_blank" rel="noopener">
+                    <img src="assets/img/lens-wayanad.webp" alt="Climbing through Edakkal caves in Wayanad" loading="lazy" width="720" height="405"><span class="shot-type">Wayanad</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section container">
+            <div class="section-head reveal">
+                <span class="kicker">06 — Toolkit</span>
+                <h2>What I <em>work</em> with.</h2>
+            </div>
+
+            <div class="bento">
+                <div class="card card-a reveal spotlight">
+                    <span class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3"/><path d="M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4"/><path d="M6 21v-4h4"/></svg>
+                    </span>
+                    <h3>DevOps &amp; delivery</h3>
+                    <ul class="chips"><li>CI/CD pipelines</li><li>Jenkins</li><li>Git</li><li>Linux</li><li>Automation</li><li>DevOps practices</li></ul>
+                </div>
+                <div class="card card-b reveal spotlight">
+                    <span class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg>
+                    </span>
+                    <h3>AI &amp; ML</h3>
+                    <ul class="chips"><li>Machine learning</li><li>Deep learning</li><li>Computer vision</li><li>Gemini AI</li><li>OpenAI APIs</li><li>watsonx</li></ul>
+                </div>
+                <div class="card card-c reveal spotlight">
+                    <h3>Languages</h3>
+                    <ul class="chips"><li>Python</li><li>Java</li><li>C</li><li>JavaScript</li><li>SQL</li><li>HTML &amp; CSS</li></ul>
+                </div>
+                <div class="card card-d reveal spotlight">
+                    <h3>Web &amp; mobile</h3>
+                    <ul class="chips"><li>Flask</li><li>React</li><li>Express</li><li>Flutter</li><li>Firebase</li><li>MongoDB</li></ul>
+                </div>
+                <div class="card card-e reveal spotlight">
+                    <span class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </span>
+                    <h3>Security</h3>
+                    <ul class="chips"><li>Network security</li><li>SIEM &amp; IDS</li><li>Incident response</li><li>Threat analysis</li></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section container">
+            <div class="section-head reveal">
+                <span class="kicker">07 — Certifications</span>
+                <h2>Always <em>learning</em>.</h2>
+            </div>
+
+            <div class="cert-grid">
+                <button class="cert-card reveal" data-full="assets/img/cert-ibm-intern.webp" data-caption="IBM Internship Program Certificate">
+                    <img src="assets/img/cert-ibm-intern.webp" alt="" loading="lazy">
+                    <span class="issuer">IBM · Jul 2025</span>
+                    <strong>Internship Program Certificate</strong>
+                </button>
+                <button class="cert-card reveal" data-full="assets/img/cert-labcanhack.webp" data-caption="IBM Software — LabCanHack">
+                    <img src="assets/img/cert-labcanhack.webp" alt="" loading="lazy">
+                    <span class="issuer">IBM Software · Aug 2025</span>
+                    <strong>LabCanHack</strong>
+                </button>
+                <button class="cert-card reveal" data-full="assets/img/cert-devops.webp" data-caption="Interskill — DevOps Fundamentals (IBM)">
+                    <img src="assets/img/cert-devops.webp" alt="" loading="lazy">
+                    <span class="issuer">IBM · Feb 2025</span>
+                    <strong>DevOps Fundamentals</strong>
+                </button>
+                <button class="cert-card reveal" data-full="assets/img/cert-jenkins.webp" data-caption="Jenkins: Beginner to Pro — Udemy">
+                    <img src="assets/img/cert-jenkins.webp" alt="" loading="lazy">
+                    <span class="issuer">Udemy · Mar 2025</span>
+                    <strong>Jenkins: Beginner to Pro</strong>
+                </button>
+                <button class="cert-card reveal" data-full="assets/img/cert-nptel-ml.webp" data-caption="Introduction to Machine Learning — NPTEL, IIT Madras">
+                    <img src="assets/img/cert-nptel-ml.webp" alt="" loading="lazy">
+                    <span class="issuer">NPTEL · IIT Madras · 2024</span>
+                    <strong>Introduction to Machine Learning</strong>
+                </button>
+                <button class="cert-card reveal" data-full="assets/img/cert-nptel-dl.webp" data-caption="Deep Learning — NPTEL, IIT Ropar">
+                    <img src="assets/img/cert-nptel-dl.webp" alt="" loading="lazy">
+                    <span class="issuer">NPTEL · IIT Ropar · 2024</span>
+                    <strong>Deep Learning</strong>
+                </button>
+            </div>
+
+            <article class="cert-feature reveal spotlight">
+                <button class="cert-image" data-full="assets/img/cert-google-pro.webp" data-caption="Google Cybersecurity Professional Certificate" aria-label="View Google Cybersecurity Professional Certificate">
+                    <img src="assets/img/cert-google-pro-sm.webp" alt="Google Cybersecurity Professional Certificate" loading="lazy">
+                </button>
+                <div class="cert-feature-info">
+                    <span class="issuer">Google · Coursera · Aug 2024</span>
+                    <h3>Google Cybersecurity Professional Certificate</h3>
+                    <p>An eight-course programme covering security frameworks, networks, Linux &amp; SQL, threat analysis, SIEM tooling, incident response and Python automation.</p>
+                    <ol class="course-list">
+                        <li><button data-full="assets/img/cert-g1.webp" data-caption="Foundations of Cybersecurity">Foundations of Cybersecurity</button></li>
+                        <li><button data-full="assets/img/cert-g2.webp" data-caption="Play It Safe: Manage Security Risks">Play It Safe: Manage Security Risks</button></li>
+                        <li><button data-full="assets/img/cert-g3.webp" data-caption="Connect and Protect: Networks and Network Security">Connect and Protect: Networks and Network Security</button></li>
+                        <li><button data-full="assets/img/cert-g6.webp" data-caption="Tools of the Trade: Linux and SQL">Tools of the Trade: Linux and SQL</button></li>
+                        <li><button data-full="assets/img/cert-g4.webp" data-caption="Assets, Threats, and Vulnerabilities">Assets, Threats, and Vulnerabilities</button></li>
+                        <li><button data-full="assets/img/cert-g5.webp" data-caption="Sound the Alarm: Detection and Response">Sound the Alarm: Detection and Response</button></li>
+                        <li><button data-full="assets/img/cert-g7.webp" data-caption="Automate Cybersecurity Tasks with Python">Automate Cybersecurity Tasks with Python</button></li>
+                        <li><button data-full="assets/img/cert-g8.webp" data-caption="Put It to Work: Prepare for Cybersecurity Jobs">Put It to Work: Prepare for Cybersecurity Jobs</button></li>
+                    </ol>
+                </div>
+            </article>
+
+            <h3 class="sub-head reveal">Hackathons &amp; more</h3>
+            <div class="cert-strip">
+                <button class="mini-cert reveal" data-full="assets/img/cert-hackkernel.webp" data-caption="HackKernel — 24-hour hackathon, Hack Club RSET">
+                    <img src="assets/img/cert-hackkernel.webp" alt="" loading="lazy"><span>HackKernel · RSET</span>
+                </button>
+                <button class="mini-cert reveal" data-full="assets/img/cert-slashkey.webp" data-caption="Slash Key 3.0 — 30-hour hackathon, NIT Calicut">
+                    <img src="assets/img/cert-slashkey.webp" alt="" loading="lazy"><span>Slash Key 3.0 · NIT Calicut</span>
+                </button>
+                <button class="mini-cert reveal" data-full="assets/img/cert-ieee-yess.webp" data-caption="IEEE YESS'24 — Distinguished Lecture Program">
+                    <img src="assets/img/cert-ieee-yess.webp" alt="" loading="lazy"><span>IEEE YESS'24</span>
+                </button>
+                <button class="mini-cert reveal" data-full="assets/img/cert-gtech.webp" data-caption="GTech Kerala Marathon 2024 — volunteer appreciation">
+                    <img src="assets/img/cert-gtech.webp" alt="" loading="lazy"><span>GTech Marathon volunteer</span>
+                </button>
+                <button class="mini-cert reveal" data-full="assets/img/cert-hackerrank.webp" data-caption="Python (Basic) — HackerRank">
+                    <img src="assets/img/cert-hackerrank-sm.webp" alt="" loading="lazy"><span>Python · HackerRank</span>
+                </button>
+                <button class="mini-cert reveal" data-full="assets/img/cert-linux.webp" data-caption="Linux Administration &amp; Networking — Rajagiri SET">
+                    <img src="assets/img/cert-linux-sm.webp" alt="" loading="lazy"><span>Linux Admin &amp; Networking</span>
+                </button>
+                <button class="mini-cert reveal" data-full="assets/img/cert-html.webp" data-caption="Learn HTML — BigBinary Academy">
+                    <img src="assets/img/cert-html.webp" alt="" loading="lazy"><span>HTML · BigBinary</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <div class="aurora aurora-soft" aria-hidden="true"><span class="blob b1"></span><span class="blob b3"></span></div>
+            <div class="container contact-inner">
+                <span class="kicker reveal">08 — Contact</span>
+                <h2 class="contact-title reveal">Let's build something<br><em class="grad-text">meaningful together.</em></h2>
+                <p class="reveal">Want to collaborate, talk tech or just say hi? My inbox is always open.</p>
+                <div class="contact-actions reveal">
+                    <a href="mailto:nxshna09@gmail.com" class="btn btn-primary btn-large magnetic">nxshna09@gmail.com</a>
+                    <button class="btn btn-ghost btn-large copy-email" data-email="nxshna09@gmail.com">
+                        <span class="copy-label">Copy email</span>
+                    </button>
+                </div>
+                <ul class="socials reveal">
+                    <li><a href="https://www.linkedin.com/in/nadhashirin-kn/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.55 4.77 5.87v5.58h-4v-4.95c0-1.18-.02-2.7-1.7-2.7-1.7 0-1.95 1.3-1.95 2.62v5.03h-4v-11Z"/></svg>
+                        <span>LinkedIn</span></a></li>
+                    <li><a href="https://github.com/nxdha" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                        <span>GitHub</span></a></li>
+                    <li><a href="https://www.instagram.com/nadha.shirin/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16Zm0 4.86a4.94 4.94 0 1 0 0 9.88 4.94 4.94 0 0 0 0-9.88Zm0 8.15a3.21 3.21 0 1 1 0-6.42 3.21 3.21 0 0 1 0 6.42Zm5.14-9.5a1.15 1.15 0 1 0 0 2.3 1.15 1.15 0 0 0 0-2.3Z"/></svg>
+                        <span>Instagram</span></a></li>
+                    <li><a href="https://www.instagram.com/storiesbynadha/" target="_blank" rel="noopener" aria-label="Stories by Nadha on Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16Zm0 4.86a4.94 4.94 0 1 0 0 9.88 4.94 4.94 0 0 0 0-9.88Zm0 8.15a3.21 3.21 0 1 1 0-6.42 3.21 3.21 0 0 1 0 6.42Zm5.14-9.5a1.15 1.15 0 1 0 0 2.3 1.15 1.15 0 0 0 0-2.3Z"/></svg>
+                        <span>@storiesbynadha</span></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <img src="assets/img/logo.png" alt="" class="footer-logo" width="345" height="388">
+            <p>© <span class="year">2026</span> Nadha Shirin K N. Designed &amp; built with care.</p>
+            <a href="#home" class="to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer" hidden>
+        <button class="lb-close" aria-label="Close">✕</button>
+        <button class="lb-nav lb-prev" aria-label="Previous certificate">←</button>
+        <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+        <button class="lb-nav lb-next" aria-label="Next certificate">→</button>
+    </div>
+</body>
 </html>
